@@ -2,14 +2,13 @@
 
 [中文版](README.zh-CN.md)
 
-This repository turns a paper PDF into Markdown, extracts a structured research graph, prepares test inputs, runs a research agent with Codex, and judges its reports. The three stages are in `pdf2md/`, `extraction/`, and `pipeline/` (which also contains `pipeline/judge/`). The paper, its required research data, model access, and API credentials are supplied by the user; they are not included in this repository.
+This repository turns a paper PDF into Markdown, extracts a structured research graph, prepares test inputs, runs a research agent with Codex, and judges its reports. The three stages are in `pdf2md/`, `extraction/`, and `pipeline/` (which also contains `pipeline/judge/`). The paper, its required research data, model access, and API credentials are supplied by the user.
 
 ## 1. Install and configure
 
-Use a Linux server with Bash and Python 3.11–3.14. This range satisfies MinerU 4.x; the pipeline itself needs Python 3.10 or newer. Install and authenticate Codex CLI separately. The full judging stage also needs an accessible OpenAI compatible Chat Completions service. Replace the example clone URL below with your repository URL.
+Use a Linux server with Bash and Python 3.11–3.14. This range satisfies MinerU 4.x; the pipeline itself needs Python 3.10 or newer. Install and authenticate Codex CLI separately. The full judging stage also needs an accessible OpenAI compatible Chat Completions service.
 
 ```bash
-git clone https://example.com/your/scibench-github.git scibench-github
 cd scibench-github
 python3 -m venv .venv
 source .venv/bin/activate

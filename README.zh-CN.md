@@ -2,14 +2,13 @@
 
 [English](README.md)
 
-本仓库提供完整流程：PDF 转 Markdown、单篇论文抽取为科研图、准备测试输入、通过 Codex 运行科研任务，以及评估报告。对应目录为 `pdf2md/`、`extraction/`、`pipeline/`；评估代码和提示词位于 `pipeline/judge/`。论文、实验所需数据、模型访问权限和 API 密钥均由使用者自行准备，仓库不包含这些资源。
+本仓库提供完整流程：PDF 转 Markdown、单篇论文抽取为科研图、准备测试输入、通过 Codex 运行科研任务，以及评估报告。对应目录为 `pdf2md/`、`extraction/`、`pipeline/`；评估代码和提示词位于 `pipeline/judge/`。论文、实验所需数据、模型访问权限和 API 密钥均由使用者自行准备。
 
 ## 1. 安装与配置
 
-建议使用 Linux、Bash 和 Python 3.11–3.14；该版本范围适用于 MinerU 4.x，流水线本身要求 Python 3.10 或更新版本。另需安装并登录 Codex CLI。完整评估还需要可访问的 OpenAI compatible Chat Completions 服务。请将下方示例 clone 地址换成你的实际仓库地址。
+建议使用 Linux、Bash 和 Python 3.11–3.14；该版本范围适用于 MinerU 4.x，流水线本身要求 Python 3.10 或更新版本。另需安装并登录 Codex CLI。完整评估还需要可访问的 OpenAI compatible Chat Completions 服务。
 
 ```bash
-git clone https://example.com/your/scibench-github.git scibench-github
 cd scibench-github
 python3 -m venv .venv
 source .venv/bin/activate
