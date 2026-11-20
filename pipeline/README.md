@@ -1,6 +1,6 @@
 # ScionBench Markdown 测试流水线
 
-本目录运行**单一 Markdown 通道**。原始 `paper_graph.json` 在预处理时短暂拆分为内部 JSON，用于生成 `agent_input.md` 和隐藏的评估文件；拆分 JSON 在预处理结束后删除，不会保留 `test-input/json`。Codex 只读取 `test-input/md/<mode>/<number>/agent_input.md`，评估器只处理 `md` 报告。`judge-input/<number>/<mode>/evaluation.json` 是隐藏答案，不属于 Agent 输入。
+本目录运行**单一 Markdown 通道**。Codex 只读取 `test-input/md/<mode>/<number>/agent_input.md`，评估器只处理 `md` 报告。`judge-input/<number>/<mode>/evaluation.json` 是隐藏答案，不属于 Agent 输入。
 
 ## 安装与配置
 
