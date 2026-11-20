@@ -1,7 +1,5 @@
 # PDF 转 Markdown
 
-原 `mineru_pdf_to_md.sh` 确实用于 PDF 转 Markdown，但它调用启智平台的 VLM 服务和未随仓库提供的本地 bridge。这里保留脚本名称和“输入 PDF 或目录、输出 Markdown 目录”的用法，改用 MinerU 官方本地 CLI，因此不需要启智环境或 `INF_API_KEY`。
-
 ## 安装
 
 使用 Python 3.11–3.14，建议在 Linux 服务器上创建独立虚拟环境：
